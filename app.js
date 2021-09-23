@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
   console.log("Hello Express !!");
-  res.send("Hello Express!!");
+  res.render('index', {title: 'Welcome to my Node App!'});
 })
 
 app.listen(3000, () => {
